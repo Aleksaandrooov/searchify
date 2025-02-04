@@ -16,9 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={nunito.className}>
-      <body>
+      <body className="flex flex-col h-screen scroll">
         <Header />
-        <div className="">{children}</div>
+        <div className="flex-1 flex flex-col">{children}</div>
       </body>
     </html>
   );
